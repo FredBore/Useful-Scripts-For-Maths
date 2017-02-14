@@ -11,21 +11,21 @@ numer2 = Fract2n * Fract1d
 AddorSubtract = input("Add or Subtract?")
 if AddorSubtract == "Subtract":
   numer = (numer1 - numer2)
-  fraction = Fraction(denom, numer)
+  fraction = Fraction(numer,denom)
   print(fraction)
 if AddorSubtract == "Add":
   numer = (numer1 + numer2)
-  fraction = Fraction(denom, numer)
+  fraction = Fraction(numer,denom)
   print(fraction)
 if AddorSubtract == "Add" and denom % numer:
   numer = (numer1 + numer2)
   numerr = (numer % denom)
-  mixed = (numer / denom)
+  mixed = int(numer / denom)
   fraction = Fraction(numerr, denom)
   print(mixed, fraction)
 if AddorSubtract == "Subtract" and denom % numer:
   numer = (numer1 - numer2)
   numerr = (numer % denom)
-  mixed = (numer / denom)
+  mixed = int(numer / denom)
   fraction = Fraction(numerr, denom)
   print(mixed, fraction)
