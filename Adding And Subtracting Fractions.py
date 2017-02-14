@@ -17,3 +17,15 @@ if AddorSubtract == "Add":
   numer = (numer1 + numer2)
   fraction = Fraction(denom, numer)
   print(fraction)
+if AddorSubtract == "Add" and denom % numer:
+  numer = (numer1 + numer2)
+  numerr = (numer % denom)
+  mixed = (numer / denom)
+  fraction = Fraction(numerr, denom)
+  print(mixed, fraction)
+if AddorSubtract == "Subtract" and denom % numer:
+  numer = (numer1 - numer2)
+  numerr = (numer % denom)
+  mixed = (numer / denom)
+  fraction = Fraction(numerr, denom)
+  print(mixed, fraction)
